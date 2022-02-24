@@ -14,5 +14,5 @@
 sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
 # Modify AdGuardHome default configuration
-sed -i 's/\/var\/adguardhome/\/etc\/AdGuardHome/g' package/feeds/kenzo/adguardhome/files/adguardhome.config
-sed -i 's/adguardhome.yaml/AdGuardHome.yaml/g' package/feeds/kenzo/adguardhome/files/adguardhome.init
+sed -i 's/\/var\/adguardhome/\/etc\/AdGuardHome/g' feeds/packages/net/adguardhome/files/adguardhome.config
+sed -i 's/adguardhome.yaml/AdGuardHome.yaml/g' feeds/packages/net/adguardhome/files/adguardhome.init
