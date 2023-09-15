@@ -18,3 +18,5 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+# fix ERROR: module '/workdir/openwrt/build_dir/target-arm_cortex-a9+neon_musl_eabi/linux-zynq/linux-5.4.255/arch/arm/crypto/sha1-arm.ko' is missing.
+echo 'CONFIG_ARM_CRYPTO=y' >>target/linux/zynq/config-5.4 
