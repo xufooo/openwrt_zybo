@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+# fix ERROR: module '/workdir/openwrt/build_dir/target-arm_cortex-a9+neon_musl_eabi/linux-zynq/linux-5.4.255/arch/arm/crypto/sha1-arm.ko' is missing.
+echo 'CONFIG_ARM_CRYPTO=y' >>target/linux/zynq/config-5.4 
+
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
